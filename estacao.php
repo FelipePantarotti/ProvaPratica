@@ -69,6 +69,6 @@
 
     <button type="submit">Registrar</button>
 
-    <a href="index.php"></a>
+    <a href="index.php">Voltar para tabela</a>
 </body>
 </html>
