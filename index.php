@@ -1,3 +1,28 @@
+<?php
+
+    session_start();
+
+    require "robo.php";
+
+    $arquivo = "robos.json";
+
+    function lerRobos($arquivo){
+        if (!file_exists($arquivo)){
+            return [];
+        }
+        $dados = json_decode(file_get_contents($arquivo),true);
+        if (!is_array($dados)){
+            return [];
+        }
+        return $dados;
+    }
+
+    function salvarRobos($arquivo, $robo){
+        
+    }
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
