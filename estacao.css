@@ -2,3 +2,23 @@
     display: flex;
     align-items: center;
 }
+
+.tipo{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.energia {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.potencia {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.funcao {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
