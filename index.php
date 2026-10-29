@@ -30,7 +30,7 @@
 
         if ($acao === 'cadastrar'){
             $nome = trim($_POST['nome']);
-            $modelo = $_POST['modelo']
+            $modelo = $_POST['modelo'];
         }
         if ($nome === '' || $modelo === ''){
             $mensagem = "Preencha todos os campos";
