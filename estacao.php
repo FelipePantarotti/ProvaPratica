@@ -1,18 +1,18 @@
 <?php
 
-    class Robo{
-        public $nome;
-        public $modelo;
-        public $energia;
-        public $potencia;
+    // class Robo{
+    //     public $nome;
+    //     public $modelo;
+    //     public $energia;
+    //     public $potencia;
 
-       public function __construsct (){
-        $this->nome = $nome;
-        $this->modelo = $modelo;
-        $this->energia = $energia;
-        $this->potencia = $potencia;
-       } 
-    }
+    //    public function __construsct (){
+    //     $this->nome = $nome;
+    //     $this->modelo = $modelo;
+    //     $this->energia = $energia;
+    //     $this->potencia = $potencia;
+    //    } 
+    // }
 
     if ($_POST["REQUEST_METHOD"]){
         $modelo = ["modelo"];
@@ -68,5 +68,7 @@
     </select>
 
     <button type="submit">Registrar</button>
+
+    <a href="index.php"></a>
 </body>
 </html>
