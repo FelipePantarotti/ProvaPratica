@@ -1,5 +1,9 @@
 <?php
 
+    class Robo{
+        
+    }
+
     if ($_POST["REQUEST_METHOD"]){
         $modelo = ["modelo"];
         $energia = ["energia"];
@@ -14,14 +18,17 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estacao.css">
     <title>Estação de Robôs</title>
 </head>
 <body>
+
     <h1>Central De Robôs</h1>
+
     <label>Modelo</label>
     <select name="modelo" id="modelo">
         <option value="explorador">Explorador</option>
@@ -30,10 +37,18 @@
     </select>
 
     <label>Energia Incial</label>
-    <input type="number" id="energia" name="energia">
+    <select name="energia" id="energia">
+        <option value="100">100</option>
+        <option value="120">120</option>
+        <option value="150">150</option>
+    </select>
 
     <label>Potência</label>
-    <input type="number" id="potencia" name="potencia">
+    <select name="potencia" id="potencia">
+        <option value="20">20</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+    </select>
 
     <label>Função</label>
     <select name="funcao" id="funcao">
