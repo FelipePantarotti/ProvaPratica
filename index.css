@@ -1,0 +1,25 @@
+.tabela {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.tipo{
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.energia {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.potencia {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
+.funcao {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
