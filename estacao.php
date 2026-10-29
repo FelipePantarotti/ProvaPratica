@@ -1,7 +1,17 @@
 <?php
 
     class Robo{
-        
+        public $nome;
+        public $modelo;
+        public $energia;
+        public $potencia;
+
+       public function __construsct (){
+        $this->nome = $nome;
+        $this->modelo = $modelo;
+        $this->energia = $energia;
+        $this->potencia = $potencia;
+       } 
     }
 
     if ($_POST["REQUEST_METHOD"]){
