@@ -1,15 +1,15 @@
 <?php
 
+    if ($_POST["REQUEST_METHOD"]){
+        $modelo = ["modelo"];
+        $energia = ["energia"];
+        $funcao = ["funcao"];
+        $potencia = ["potencia"];
 
-
-
-
-
-
-
-
-
-
+        if ($energia === "" || $potencia === ""){
+            echo "Preencha os campos obrigatórios";
+        }
+    }
 
 ?>
 
@@ -41,5 +41,7 @@
         <option value="reparar">Reparar equipamentos</option>
         <option value="proteger">Proteger a estação</option>
     </select>
+
+    <button type="submit">Registrar</button>
 </body>
 </html>
