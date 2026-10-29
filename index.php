@@ -18,8 +18,10 @@
     }
 
     function salvarRobos($arquivo, $robo){
-        
+        file_put_contents($arquivo,json_encode($robo, JSON_PRETTY_PRINT || JSON_UNESCAPED_UNICODE));   
     }
+
+    $robos = lerRobos($arquivo)
 
 
 ?>

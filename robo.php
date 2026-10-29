@@ -15,7 +15,8 @@
        }
 
        public function exibirStatus(){
-        return "Modelo {$this->modelo}
+        return "Robo {$this->nome}
+                Modelo {$this->modelo}
                 Energia {$this->energia}
                 Potência{$this->potencia}";
        }
