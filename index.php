@@ -21,8 +21,22 @@
         file_put_contents($arquivo,json_encode($robo, JSON_PRETTY_PRINT || JSON_UNESCAPED_UNICODE));   
     }
 
-    $robos = lerRobos($arquivo)
+    $robos = lerRobos($arquivo);
+    $mensagem = "";
+    $tipoMensagem = "";
 
+    if ($_SERVER["REQUEST_METHOD"] === "POST"){
+        $acao = $_POST["acao"];
+
+        if ($acao === 'cadastrar'){
+            $nome = trim($_POST['nome']);
+            $modelo = $_POST['modelo']
+        }
+        if ($nome === '' || $modelo === ''){
+            $mensagem = "Preencha todos os campos";
+            $tipoMensagem = "Erro";
+        }
+    }
 
 ?>
 <!DOCTYPE html>

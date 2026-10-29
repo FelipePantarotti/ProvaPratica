@@ -6,9 +6,6 @@
         $funcao = ["funcao"];
         $potencia = ["potencia"];
 
-        if ($energia === "" || $potencia === ""){
-            echo "Preencha os campos obrigatórios";
-        }
     }
 
 ?>
